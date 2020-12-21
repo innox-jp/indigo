@@ -207,7 +207,7 @@ header.global-header {
 }
 
 .wrapper-footer {
-  box-shadow: -1px -1px -10px 1px #c3c3c3!important;
+  box-shadow: 1px 1px 10px 1px #c3c3c3!important;
 }
 
 .global-header  {
@@ -235,4 +235,13 @@ header.global-header {
     background: none;
   }
 
+}
+
+.global-header .nav-links .secondary .btn {
+  border-radius: 3px!important;
+}
+
+.courses-container .courses .course {
+  border: 1px solid #c3c3c3!important;
+  border-bottom: 1px solid #c3c3c3!important;
 }
