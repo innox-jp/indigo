@@ -7,7 +7,7 @@ $footer-height: 125.5px;
 
 body, body.view-profile {
   min-height: initial;
-  background-color: rgb(167, 17, 17);
+  background-color: #ffffff;
 }
 
 %btn-pl-default-base {
@@ -229,7 +229,7 @@ header.global-header {
     padding: 40px;
     max-width: 100%;
     background: url('#{$static-path}/images/banner.jpg') center center no-repeat ;
-    background-size: contain;
+    background-size: cover;
   };
   .title {
     background: none;
