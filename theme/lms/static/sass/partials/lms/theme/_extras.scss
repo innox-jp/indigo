@@ -7,7 +7,7 @@ $footer-height: 125.5px;
 
 body, body.view-profile {
   min-height: initial;
-  background-color: #fff;
+  background-color: rgb(167, 17, 17);
 }
 
 %btn-pl-default-base {
@@ -70,7 +70,7 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
 /////////////////// Home page
 .home header {
   box-shadow: none;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .home > header .title {
@@ -150,9 +150,6 @@ nav.wrapper-preview-menu {
   background-color: #fff;
 }
 
-.home .courses-container .courses .courses-listing {
-  text-align: center;
-}
 
 .home .courses-container .courses .courses-listing .courses-listing-item {
   float: none;
@@ -200,4 +197,51 @@ nav.wrapper-preview-menu {
   footer#footer-openedx .footer-about-openedx a {
       float: none;
   }
+}
+
+
+// kksasimi
+
+header.global-header {
+  box-shadow: 1px 1px 10px 1px #c3c3c3!important;
+}
+
+.wrapper-footer {
+  box-shadow: 1px 1px 10px 1px #c3c3c3!important;
+}
+
+.global-header  {
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.global-header .header-logo a .logo {
+  height: 45PX;
+}
+
+.register-btn {
+  border-radius: 3px;
+  border: 1px solid #c3c3c3;
+}
+
+
+.home>header {
+  .outer-wrapper {
+    padding: 40px;
+    max-width: 100%;
+    background: url('#{$static-path}/images/banner.jpg') center center no-repeat ;
+    background-size: contain;
+  };
+  .title {
+    background: none;
+  }
+
+}
+
+.global-header .nav-links .secondary .btn {
+  border-radius: 3px!important;
+}
+
+.courses-container .courses .course {
+  border: 1px solid #c3c3c3!important;
+  border-bottom: 1px solid #c3c3c3!important;
 }
