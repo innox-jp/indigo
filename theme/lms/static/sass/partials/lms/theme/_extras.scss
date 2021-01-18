@@ -186,33 +186,39 @@ nav.wrapper-preview-menu {
   padding: 25px 40px;
 
   .wrapper-logo {
-      display: none;
+    display: none;
   }
   .copyright {
-      display: none;
+    display: none;
   }
   .nav-legal ul {
-      display: inline-block;
+    display: inline-block;
   }
   footer#footer-openedx .footer-about-openedx a {
-      float: none;
+    color: #FFFFFF;
+    float: none;
   }
 }
+
+
+// .wrapper-footer footer#footer-openedx a {
+//   color: #FFFFFF;
+// }
 
 
 // kksasimi
-
 header.global-header {
-  background: #0071c5;
-  box-shadow: 1px 1px 10px 1px #3e53c9!important;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 10px 1px #c3c3c3!important;
 }
 
 .wrapper-footer {
+  background: #FFFFFF;
   box-shadow: 1px 1px 10px 1px #c3c3c3!important;
 }
 
 .global-header  {
-  border-bottom: 1px solid #6abbf3;
+  border-bottom: 1px solid #c3c3c3;
 }
 
 .global-header .header-logo a .logo {
@@ -224,7 +230,6 @@ header.global-header {
   border: 1px solid #c3c3c3;
 }
 
-
 .home>header {
   .outer-wrapper {
     padding: 40px;
@@ -235,7 +240,6 @@ header.global-header {
   .title {
     background: none;
   }
-
 }
 
 .global-header .nav-links .secondary .btn {
@@ -252,7 +256,6 @@ header.global-header {
     display: none!important;
   }
 }
-
 
 /////////////////// index_page
 .box-advance, .box-tello, .box-entry {
@@ -290,8 +293,97 @@ header.global-header {
 }
 
 
+.teacher_1, .teacher_2, .teacher_3 {
+  height: 70px;
+  width: 200px;
+}
+
+.teacher_1 {
+  background: url('#{$static-path}/images/UB_logo.png') center center no-repeat ;
+  background-size: contain;
+}
+
+.teacher_2 {
+  background: url('#{$static-path}/images/RO_logo.png') center center no-repeat ;
+  background-size: contain;
+}
+
+.teacher_3 {
+  background: url('#{$static-path}/images/DJI_logo.png') center center no-repeat ;
+  background-size: contain;
+}
+
+
+
+.about h2, .help h2 {
+  font-size: 1.25em !important;
+  color: #ffffff;
+  background-color: #3b85ff;
+  border: 1px solid #ccc;
+  padding: 8px 8px;
+
+}
+
+.about h4, .help h4 {
+  font-size: 1.25em !important;
+  border-bottom: 1px solid #ccc;
+  padding: 4px 4px;
+  margin: 40px 0px;
+}
+
+.about p {
+  line-height: 20px;
+}
+
+.wrapper-footer p {
+  margin-bottom: 10px;
+  line-height: 12px;
+}
+
+.mail_contact {
+  margin: 0 auto;
+  width: 128px;
+  height: 128px;
+  background: url('#{$static-path}/images/mail.png') center center no-repeat ;
+  background-size: contain;
+}
+
+
+.courses-container .courses {
+  padding: 0px 10px;
+}
+
+// .wrapper-footer footer#footer-openedx .colophon .nav-colophon {
+//   color: #fff!important;
+// }
+
 #content.content-wrapper {
   padding: 0!important;
-  margin-top: 70px!important;
+  // margin-top: 70px!important;
+}
+
+.team_block {
+  display: flex;
+  flex-direction: column;
+  background: #c3c3c3;
+
+  .team-tit {
+    height: 70px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 0px;
+    border-bottom: 1px solid #a6a6a6;
+    .team-tit-text {
+      margin: 0 auto;
+      width: 388px;
+      height: 70px;
+      background: url('#{$static-path}/images/team_title.png') center center no-repeat ;
+      background-size: contain;
+    }
+  }
+  .team-con {
+    height: 60%;
+    padding: 10px 0px 20px 0px;
+  }
 
 }

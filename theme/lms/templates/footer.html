@@ -13,19 +13,23 @@
 % if uses_bootstrap:
   <div class="container-fluid wrapper-footer">
     <footer>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-9">
-          {% if INDIGO_FOOTER_NAV_LINKS %}
+          
           <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
             <ul class="navbar-nav">
-              {% for link in INDIGO_FOOTER_NAV_LINKS %}
+              
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ link['url'] }}">{{ link['title'] }}</a>
+                  <a class="nav-link" href="/about">About</a>
                 </li>
-              {% endfor %}
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact</a>
+                </li>
+              
             </ul>
           </nav>
-          {% endif %}
+          
 
           ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
           <p class="copyright">${footer['copyright']}
@@ -37,17 +41,21 @@
               % endif
           </p>
 
-          {% if INDIGO_FOOTER_LEGAL_LINKS %}
+          
           <nav class="navbar legal-nav navbar-expand-sm" aria-label="${_('Legal')}">
             <ul class="navbar-nav">
-              {% for link in INDIGO_FOOTER_LEGAL_LINKS %}
+              
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ link['url'] }}">{{ link['title'] }}</a>
+                  <a class="nav-link" href="/tos">Terms of service</a>
                 </li>
-              {% endfor %}
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/overhangio/indigo">Indigo theme for Open edX</a>
+                </li>
+              
             </ul>
           </nav>
-          {% endif %}
+          
         </div>
         <div class="col-md-3">
           ## Please leave this link and use one of the logos provided
@@ -67,7 +75,8 @@
             </div>
           % endif
         </div>
-      </div>
+      </div> -->
+      <div class="d-flex justify-content-between flex-wrap"><div class="mb-4 mr-5"><h2 class="mb-4 section-title">edX</h2><ul class="list-unstyled p-0 mt-4"><li class="mb-2"><a class="footer-link" href="/about-us">About</a></li><li class="mb-2"><a class="footer-link" href="https://business.edx.org/?utm_campaign=edX.org%20Referral&amp;utm_medium=Footer&amp;utm_source=prospectus.edx.org">edX for Business</a></li><li class="mb-2"><a class="footer-link" href="/affiliate-program">Affiliates</a></li><li class="mb-2"><a class="footer-link" href="http://open.edx.org">Open edX</a></li><li class="mb-2"><a class="footer-link" href="/careers">Careers</a></li><li class="mb-2"><a class="footer-link" href="https://press.edx.org">News</a></li></ul></div><div class="mb-4 mr-5"><h2 class="mb-4 section-title">Connect</h2><ul class="list-unstyled p-0 mt-4"><li class="mb-2"><a class="footer-link" href="https://blog.edx.org">Blog</a></li><li class="mb-2"><a class="footer-link" href="https://courses.edx.org/support/contact_us">Contact Us</a></li><li class="mb-2"><a class="footer-link" href="https://support.edx.org">Help Center</a></li><li class="mb-2"><a class="footer-link" href="/media-kit">Media Kit</a></li><li class="mb-2"><a class="footer-link" href="/donate">Donate</a></li></ul></div><div class="mb-4 flex-grow-1"><h2 class="mb-4 section-title">Legal</h2><ul class="list-unstyled p-0 mt-4"><li class="mb-2"><a class="footer-link" href="/edx-terms-service">Terms of Service &amp; Honor Code</a></li><li class="mb-2"><a class="footer-link" href="/edx-privacy-policy">Privacy Policy</a></li><li class="mb-2"><a class="footer-link" href="/accessibility">Accessibility Policy</a></li><li class="mb-2"><a class="footer-link" href="/trademarks">Trademark Policy</a></li><li class="mb-2"><a class="footer-link" href="/sitemap">Sitemap</a></li></ul></div><div class="i18n d-flex mb-4"><form class="large-column"><label class="section-title mt-0" for="site-footer-language-select">Choose Language</label><div class="d-flex align-items-start mt-3"><select class="form-control mr-2" id="site-footer-language-select"><option selected="" value="en">English</option><option value="es">español</option></select><button id="site-footer-language-submit" class="btn btn-outline-primary" type="submit">Apply</button></div></form></div></div>
     </footer>
   </div>
 % else:
@@ -81,17 +90,25 @@
       % endif
     >
       <div class="colophon">
-        {% if INDIGO_FOOTER_NAV_LINKS %}
+        
         <nav class="nav-colophon" aria-label="${_('About')}">
           <ol>
-              {% for link in INDIGO_FOOTER_NAV_LINKS %}
+              
               <li>
-                <a href="{{ link['url'] }}">{{ link['title'] }}</a>
+                <a href="/about">${_('About')}</a>
               </li>
-              {% endfor %}
+              
+              <li>
+                <a href="/contact">お問い合わせ</a>
+              </li>
+
+              <li>
+                <a href="/help">利用までの流れ</a>
+              </li>
+              
           </ol>
         </nav>
-        {% endif %}
+        
         % if context.get('include_language_selector', footer_language_selector_is_enabled()):
             <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
         % endif
@@ -121,17 +138,18 @@
               % endif
           </p>
 
-        {% if INDIGO_FOOTER_LEGAL_LINKS %}
-        <nav class="nav-legal" aria-label="${_('Legal')}">
-          <ul>
-            {% for link in INDIGO_FOOTER_LEGAL_LINKS %}
+        
+        <nav>
+          <ul>      
               <li>
-                <a href="{{ link['url'] }}">{{ link['title'] }}</a>
+                <p>© 2021 JUKU ONLINE. All rights reserved.</p>
               </li>
-            {% endfor %}
+              <li>
+                <p>|  サイトメンテナンス<a href="http://www.innox-jp.com/" class="inline-link">株式会社ＩｎｎｏＸ</a></p>
+              </li>
           </ul>
         </nav>
-        {% endif %}
+        
       </div>
 
       ## Please leave this link and use one of the logos provided
@@ -142,11 +160,11 @@
       <div class="footer-about-openedx">
         <p>
           <a href="https://docs.tutor.overhang.io" rel="noopener" target="_blank">
-            <img src="${static.url('images/tutor-logo.png')}" height="42" />
+            <img src="${static.url('images/logo.png')}" height="42" />
           </a>
-          <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
+          <!-- <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
             <img src="${static.url('images/openedx-logo.png')}" alt="${footer['openedx_link']['title']}" width="140" />
-          </a>
+          </a> -->
         </p>
       </div>
       % endif
