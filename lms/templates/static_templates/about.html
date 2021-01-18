@@ -1,0 +1,89 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("About")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("About")}</%block>
+        </h1>
+        
+
+        <h2>オンライン学習の特徴</h2>
+        <!-- <h3>ご利用までの流れ</h3> -->
+
+        <h4>
+            <span>1. 「映像教材」と「個別指導」の2本柱で学習をサポート。</span>
+        </h4>
+
+        <div class="so-panel widget widget_sow-editor panel-first-child panel-last-child">
+            <div class="so-widget-sow-editor so-widget-sow-editor-base">
+                <div class="siteorigin-widget-tinymce textwidget">
+                    <p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">　当法人では、ご家庭にいながらも、未習の単元であっても基礎学力を身に着けられるようなオンライン学習をご提案いたします。</span></p>
+                    <p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">　一般的に「映像配信」や「映像教材」は、いつでも学習できるという気楽さがある一方、自分で管理して授業を進めていくことが難しかったり、一方通行の授業ゆえに授業内容を理解できないというデメリットがあります。また、「個別指導」は、映像教材のデメリットを解消できる一方、全ての科目を賄うことが時間的・経済的に現実的ではないという側面を持っています。この点を踏まえ、両者のもつ長所・短所を2つの指導形態を組み合わせることで解消し、学習に自信のない方や不登校の方でも無理なく、自分のペースで学べるようにしております。</span></p>
+                </div>
+            </div>
+        </div>
+
+        <h4>
+            <span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">2. 映像教材「デキタス」で基礎基本をマスター!<br></span>
+        </h4>
+
+        <div class="so-panel widget widget_sow-editor panel-first-child panel-last-child">
+            <div class="so-widget-sow-editor so-widget-sow-editor-base">
+                <div class="siteorigin-widget-tinymce textwidget">
+                    <p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">「デキタス」は、学校の勉強を確実に理解していく事を目指し開発された、小中学生用タブレット通信教材です。教科書内容に合った授業や演習問題、さかのぼり学習で1学年前の授業に戻るなど、学校の勉強を自宅で自分のペースで自由に行えます。</span></p>
+                    <p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">　また、教科書内容に合った授業と問題演習を行うので、基礎・基本をしっかりと身につけるためのプログラムとして有効です。</span></p>
+                </div>
+            </div>
+        </div>
+
+        <h4>
+            <span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">3. オンラインを使用した、双方向の「個別指導」。<br></span>
+        </h4>
+
+        <div class="so-panel widget widget_sow-editor panel-first-child panel-last-child">
+            <div class="so-widget-sow-editor so-widget-sow-editor-base">
+                <div class="siteorigin-widget-tinymce textwidget">
+                    <p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">　個別指導は、SkypeやZoomを使用して、講師と1:1でリアルタイムの授業を行います。対面での個別指導と同じように、生徒の方は個々のニーズに応じた授業を受けたり、映像教材で分からなかったところなどを質問することができます。また、映像教材の進捗管理や、それぞれのニーズを踏まえて、映像教材のどの単元を学習すべきかなどの指導も行いますので、何を勉強すべきかわからない方も安心して学ぶことができます。</span></p>
+                    <p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">　基本コースでは、週2回、1回40分の授業を受けることができます。週2回の科目の内訳は自由ですが、独学が難しい数学と英語をお勧めいたします。</span></p>
+                </div>
+            </div>
+        </div>
+
+        <h4>
+            <span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">4. 勉強が苦手な子や不登校でも無理なく学べる！<br></span>
+        </h4>
+
+        <div class="so-panel widget widget_sow-editor panel-first-child panel-last-child">
+            <div class="so-widget-sow-editor so-widget-sow-editor-base">
+                <div class="siteorigin-widget-tinymce textwidget">
+                    <p>
+                        <span style="font-family: georgia, palatino, serif;">　
+                            <span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">映像授業は、講師が一方的に授業する形態になりがちなため、成績上位者向けの教材として誕生した経緯があります。当法人のオンライン学習コースは、一方通行の授業をなるべく排除し、映像教材についても、「基礎事項に特化し、双方向のやり取りを重視する」ものになっております。そのため、勉強が苦手な子や不登校の方でも安心して学習に取り組む事ができます。</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h4>
+            <span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">5. 当法人の学習と組み合わせられる高いカスタマイズ性。<br> </span>
+        </h4>
+
+            <div id="panel-gb3324-60016707052cd-11-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="17">
+                <div class="so-widget-sow-editor so-widget-sow-editor-base">
+                    <div class="siteorigin-widget-tinymce textwidget">
+                        <p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">　オンライン学習コースは「デキタス＋個別指導週2回」の基本プランのほか、デキタスのみを使用するコースや、当法人のフリースクール学習会員や学習塾(個別指導塾みなも・アップ学習会南森町校)と組み合わせることが可能です。</span></p>
+                        <p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">　「基礎学力だけでなく、応用問題や入試対策をしてほしい。」という方は、既存の学習塾も是非ご利用ください。</span></p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- <p>
+            <%block name="pagecontent">innox edx is an online learning platform powered by <a href="https://open.edx.org">Open edX</a>. It runs with <a href="https://docs.tutor.overhang.io">Tutor</a>, with the customized <a href="https://github.com/overhangio/indigo">Indigo</a> theme.</%block>
+        </p> -->
+    </section>
+</main>

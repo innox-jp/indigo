@@ -47,6 +47,7 @@ from openedx.core.djangolib.markup import HTML, Text
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </%block>
 
+
 <main id="main" aria-label="Content" tabindex="-1">
   <section class="home">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -87,17 +88,15 @@ from openedx.core.djangolib.markup import HTML, Text
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   
-   
-    <div class="box-tello">
+    <!-- <div class="box-tello">
       <div class="container">
         <div class="row">
 
         </div>
       </div>
     </div>
-
 
     <div class="box-advance">
       <div class="container">
@@ -106,8 +105,28 @@ from openedx.core.djangolib.markup import HTML, Text
         </div>
       </div>
     </div> -->
-    
     <%include file="${courses_list}" />
+    
+    <div class="team_block">
+      <div class="team-tit text-center">
+        <div class="team-tit-text"></div>
+      </div>
+
+      <div class="team-con d-flex justify-content-center flex-wrap">
+        <div class="">
+          <div class="teacher_1"></div>
+        </div>
+        <div class="">
+          <div class="teacher_2"></div>
+        </div>
+        <div class="5">
+          <div class="teacher_3"></div>
+        </div>
+      </div>
+    </div>
+
+    
+    
   </section>
 </main>
 
