@@ -349,21 +349,22 @@ header.global-header {
 }
 
 
-
+.courses-container .courses {
+  padding: 0px 10px;
+}
 
 // .wrapper-footer footer#footer-openedx .colophon .nav-colophon {
 //   color: #fff!important;
 // }
 
-// #content.content-wrapper {
-//   padding: 0!important;
-//   margin-top: 70px!important;
-// }
+#content.content-wrapper {
+  padding: 0!important;
+  // margin-top: 70px!important;
+}
 
 .team_block {
   display: flex;
   flex-direction: column;
-  height: 150px;
   background: #c3c3c3;
 
   .team-tit {
