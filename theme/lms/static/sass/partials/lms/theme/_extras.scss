@@ -7,7 +7,7 @@ $footer-height: 125.5px;
 
 body, body.view-profile {
   min-height: initial;
-  background-color: rgb(167, 17, 17);
+  background-color: #ffffff;
 }
 
 %btn-pl-default-base {
@@ -203,7 +203,8 @@ nav.wrapper-preview-menu {
 // kksasimi
 
 header.global-header {
-  box-shadow: 1px 1px 10px 1px #c3c3c3!important;
+  background: #0071c5;
+  box-shadow: 1px 1px 10px 1px #3e53c9!important;
 }
 
 .wrapper-footer {
@@ -211,7 +212,7 @@ header.global-header {
 }
 
 .global-header  {
-  border-bottom: 1px solid #c3c3c3;
+  border-bottom: 1px solid #6abbf3;
 }
 
 .global-header .header-logo a .logo {
@@ -244,4 +245,53 @@ header.global-header {
 .courses-container .courses .course {
   border: 1px solid #c3c3c3!important;
   border-bottom: 1px solid #c3c3c3!important;
+}
+
+.dashboard {
+  .side-container {
+    display: none!important;
+  }
+}
+
+
+/////////////////// index_page
+.box-advance, .box-tello, .box-entry {
+  width: 100%; 
+  height: 350px;
+}
+.box-advance {
+  background: #00bcd4;
+}
+.box-tello {
+  background: #f5b33e;
+}
+.box-entry {
+  background: #ff7ec3;
+}
+
+.juku-1, .juku-2, .juku-3 {
+  height: 300px;
+}
+
+
+.juku-1 {
+  background: url('#{$static-path}/images/banner1.jpg') center center no-repeat ;
+  background-size: cover;
+}
+
+.juku-2 {
+  background: url('#{$static-path}/images/banner2.jpg') center center no-repeat ;
+  background-size: cover;
+}
+
+.juku-3 {
+  background: url('#{$static-path}/images/banner3.jpg') center center no-repeat ;
+  background-size: cover;
+}
+
+
+#content.content-wrapper {
+  padding: 0!important;
+  margin-top: 70px!important;
+
 }
